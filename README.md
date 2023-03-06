@@ -1,66 +1,73 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Minimum Requirements
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+- PHP 8.0+
+- Composer 2.0+
+- MySQL 5.7+
+- Laravel 9.0
 
-## About Laravel
+## How to install
+- Step 1: Clone the repository
+https://github.com/spysabbirproject/news-project-one.git
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Step 2: Install Laravel
+ i) run command "composer install"
+ ii) Copy .env.example file and remame .env file
+ iii) run command "php artisan key:generate"
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Step 3: Edit database details 
+    i) Create news_project_one tables in your database
+    ii) Database details contact .env file in database feld
+    iii) Import news_project_one tables
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Step 4: Mail details contact .env file in mail feld
+MAIL_MAILER=Your mail mailer
+MAIL_HOST=Your mail host
+MAIL_PORT=Your mail port
+MAIL_USERNAME= Your mail address
+MAIL_PASSWORD=Your mail password
+MAIL_ENCRYPTION=ssl
+MAIL_FROM_ADDRESS= Your mail address
+MAIL_FROM_NAME="${APP_NAME}"
 
-## Learning Laravel
+## About This Project
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+This is a web-based news project. From here user can see news. Any valid user can comment any news. We have an dashboard panel to control this site.
+Our system has a search box by using this you can search news headline. Another important feature in our system is using a valid and unique email address. This means you can not be able to register in our system if you are already registered with existing mail address.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Feature Admin Panel: 
+Admin panel have three roles which is:
+- Admin
+- Super Admin
+- Reporter
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   Super admin can change user role at any time. Manager and Admin have an limit that they can not be able to change Super Admins role.
+-   Admin or reporter who posted a news they can be able to update and delete their posts at any time.
 
-## Laravel Sponsors
+Reporter, Admin & Super Admin panel login details:- 
+Super Admin Email: superadmin@gmail.com
+Admin Email: admin@gmail.com
+Reporter Email: reporterdhaka@gmail.com
+Password : 123456789
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Feature Frontend Panel
 
-### Premium Partners
+-   They can see any news from this site and also can comment any news.
+-   User can see location wise news and old date wise news.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+User login details:- 
+User Email: user@gmail.com
+Password : 123456789
 
-## Contributing
+## Software Requirement
+I have used those languages to create this project.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Front-End
+- HTML
+- CSS
+- Java Scripts
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Back-End: 
+- PHP
+- Laravel-Framework : 9
+- Mysql
+- Ajax
